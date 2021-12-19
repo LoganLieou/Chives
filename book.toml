@@ -1,0 +1,18 @@
+[book]
+authors = ["LoganLieou"]
+language = "en"
+multilingual = false
+src = "src"
+title = "ACM Research Spring 2022"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "coal"
+mathjax-support = true
+git-repository-url = "https://github.com/LoganLieou/Chives"
+
+[output.html.playground]
+editable = true
+
+[preprocessor.mathjax]
+renders = ["html"]
