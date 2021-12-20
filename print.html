@@ -140,8 +140,9 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="week-1-introduction"><a class="header" href="#week-1-introduction">Week 1 (Introduction)</a></h1>
-<p>In this chapter I will attempt to decypher a project idea. Additionally I will test the enviornment that I am using to generate this documentation.</p>
+                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<p>The idea behind this project is parametric design; I will copy and paste the main idea here from the google doc:
+How it works: given a set of parameters you can design a product. Let’s take an example say I wanted to design a flower garden, given a set of parameters and some defined loss function I can create a learning problem {{p}, L} where we want to change p to minimize L in this case let’s say my goal is to make the flower garden very pretty, in order to do this I have to define a loss function L such that it penalizes ugliness in the flower garden, then given a set of parameters p I need to minimize this loss. Since the loss function is actually subjective in this case we’ll make it up by surveying a bunch of people and using the distribution to infer the loss (I just realized how scuffed this example is but in the actual design problem the loss function would be quantifiable) actually in this case you don’t even need to find the optimal parameters by feeding them into the loss then minimizing it, due to the way the loss works you would actually be able to figure the optimal parameters based on the distribution because the distribution L has to be a function of {p} take the set of parameters at the smallest value of L then boom loss minimized. So that’s a qualitative example, now for a quantitative example; in the case of parametric architecture, we can take in a set of parameters defined p = {materials, height, width, volume, square feet, etc.} and a loss function to quantify something about the building in this case let’s say L is some function to quantify heating efficiency of the building ie. outputs something like J • sqft / s  representing the power it takes to heat 1 unit square foot of the building. So to solve this problem you would want to search the available parameter space ie the set of all materials, set of all ceiling heights, the set of all layouts (graph to represent the layouts -&gt; constrained graphs permutations) etc. then brute force search the parameter space to find the optimal set of parameters that minimizes the defined loss function. What I think is that there is probably a better way than just brute force search to determine the optimal set of parameters for a given problem. But this is the general explanation about how this idea works, now all I have to do is apply it to some sort of design problem then boom.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="math-jax-support"><a class="header" href="#math-jax-support">Math Jax Support</a></h1>
 <p>This enviornment supports math jax which is very useful for writing equations and showing math!
 Example using Ridge Regression classification...</p>
@@ -150,10 +151,22 @@ Example using Ridge Regression classification...</p>
 \]</p>
 <p>There's other maths we can display to be fancy show off mathjax powers like if I want to do some sort of inline notation I can also do that like so: \(\alpha{}\) say I want to refer to this variable boom math jax powers.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="playgrounds"><a class="header" href="#playgrounds">Playgrounds</a></h1>
-<p>I can write code explainations and allow participants to run in in the documentation very cool!</p>
-<pre><pre class="playground"><code class="language-rust editable">fn main() {
-    let number = 5;
-    print!(&quot;{}&quot;, number);
+<p>I can write code explainations and allow participants to run in in the documentation / book very cool!</p>
+<pre><pre class="playground"><code class="language-rust editable">fn search&lt;T: PartialOrd&gt;(arr: Vec&lt;T&gt;, tar: T) -&gt; Option&lt;i32&gt; {
+    for i in 0..arr.len() {
+        if arr[i] == tar {
+            return i as i32;
+        }
+    }
+    None
+}
+
+fn main() {
+    let arr: Vec&lt;i32&gt; = vec![1, 2, 3, 4];
+    let tar: i32 = 3;
+
+    let loc = search(arr, tar);
+    println!(&quot;{:?}&quot;, loc);
 }
 </code></pre></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="project-ideas"><a class="header" href="#project-ideas">Project Ideas</a></h1>
@@ -166,7 +179,12 @@ Example using Ridge Regression classification...</p>
 </ul>
 <p>There's an additional idea realted to generating biomedical images for better models and variable data but who knows.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="project-statement"><a class="header" href="#project-statement">Project Statement</a></h1>
-<p>Yeah not sure what the project is yet...</p>
+<p>Scuffed: a project about Urban Design, Urban Planning, Parametric Design, and Machine Learning (maybe).</p>
+<h1 id="timeline"><a class="header" href="#timeline">Timeline</a></h1>
+<p>In the first few weeks of the project participants will learn the basics of parametric design as well as urban design patterns and principles, next they will learn some discrete math, data structures and algorithms as well as basic ML models and hyper parameter tuning methods. Next they will attempt to implement an algorithm or aproach that will be really :poggers:</p>
+<p>In weeks 8-10 the team needs to focus a lot of their effort on making the presentation and the poster for the symposium so most of the actual work and deliverable need to be done at this point.</p>
+<h1 id="prerequesites"><a class="header" href="#prerequesites">Prerequesites</a></h1>
+<p>Knowlege on parametric desgin, machine learning, algorithms and datastructures, inferential statistics.</p>
 
                     </main>
 
