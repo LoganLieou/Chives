@@ -1,4 +1,15 @@
-# Introduction
+# Problem Statement
 
-The idea behind this project is parametric design; I will copy and paste the main idea here from the google doc:
-How it works: given a set of parameters you can design a product. Let’s take an example say I wanted to design a flower garden, given a set of parameters and some defined loss function I can create a learning problem {{p}, L} where we want to change p to minimize L in this case let’s say my goal is to make the flower garden very pretty, in order to do this I have to define a loss function L such that it penalizes ugliness in the flower garden, then given a set of parameters p I need to minimize this loss. Since the loss function is actually subjective in this case we’ll make it up by surveying a bunch of people and using the distribution to infer the loss (I just realized how scuffed this example is but in the actual design problem the loss function would be quantifiable) actually in this case you don’t even need to find the optimal parameters by feeding them into the loss then minimizing it, due to the way the loss works you would actually be able to figure the optimal parameters based on the distribution because the distribution L has to be a function of {p} take the set of parameters at the smallest value of L then boom loss minimized. So that’s a qualitative example, now for a quantitative example; in the case of parametric architecture, we can take in a set of parameters defined p = {materials, height, width, volume, square feet, etc.} and a loss function to quantify something about the building in this case let’s say L is some function to quantify heating efficiency of the building ie. outputs something like J • sqft / s  representing the power it takes to heat 1 unit square foot of the building. So to solve this problem you would want to search the available parameter space ie the set of all materials, set of all ceiling heights, the set of all layouts (graph to represent the layouts -> constrained graphs permutations) etc. then brute force search the parameter space to find the optimal set of parameters that minimizes the defined loss function. What I think is that there is probably a better way than just brute force search to determine the optimal set of parameters for a given problem. But this is the general explanation about how this idea works, now all I have to do is apply it to some sort of design problem then boom.
+Many of the decisions made in early stages of design are highly impactful to the building's enviornmental preformance [1] however the impact of these decisions are usually not known until later stages of design after other decisions are made, therefore we use machine learning and parametric design in order to help us better analyse the uncertianty inherit in these early design decisions to help architect more sustainable buildings.
+
+# Scope
+
+The project plans on creating a piece of software, model, or plugin in order to help architects / building designers better understand and estimate the enviornmental impact of early design decisions.
+
+## How
+
+The basic idea comes from two papers [1] and [2] where the authors attempt to use machine learning methods to analyse the uncertianty related design decisions and enviornmental impact. Essentially what we are trying to do is take a set of design parameters and correlate those with a large dataset of outcomes
+
+# Citations
+
+[1] Feng, K., Lu, W., & Wang, Y. (2019). Assessing environmental performance in early building design stage: An integrated parametric design and machine learning method. Sustainable Cities and Society, 50, 101596.

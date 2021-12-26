@@ -1,6 +1,6 @@
 # Project Statement
 
-Scuffed: a project about Urban Design, Urban Planning, Parametric Design, and Machine Learning (maybe).
+Parametric Urban Design
 
 # Timeline
 
