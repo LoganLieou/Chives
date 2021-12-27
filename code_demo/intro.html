@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Minimum Viable Product - ACM Research Spring 2022</title>
+        <title>Code Demo - ACM Research Spring 2022</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -77,7 +77,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../project_statement/intro.html"><strong aria-hidden="true">1.</strong> Problem Statement and Timeline</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../project_statement/mvp.html" class="active"><strong aria-hidden="true">1.1.</strong> Minimum Viable Product</a></li></ol></li><li class="chapter-item expanded "><a href="../papers/intro.html"><strong aria-hidden="true">2.</strong> Papers</a></li><li class="chapter-item expanded "><a href="../code_demo/intro.html"><strong aria-hidden="true">3.</strong> Code Demo</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../project_statement/intro.html"><strong aria-hidden="true">1.</strong> Problem Statement and Timeline</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../project_statement/mvp.html"><strong aria-hidden="true">1.1.</strong> Minimum Viable Product</a></li></ol></li><li class="chapter-item expanded "><a href="../papers/intro.html"><strong aria-hidden="true">2.</strong> Papers</a></li><li class="chapter-item expanded "><a href="../code_demo/intro.html" class="active"><strong aria-hidden="true">3.</strong> Code Demo</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -139,34 +139,23 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="minimum-viable-product"><a class="header" href="#minimum-viable-product">Minimum Viable Product</a></h1>
-<p><em>What should the participants be able to produce at least?</em>
-The minimum viable product for this project will be, a solution that simply correlates features from a dataset to labels in the same dataset that target / indicate environmental impact in some why, this can be done very simply with a regressor model, we will avoid AI as much as possible but if we want the 3 line solution you can always just use fastai tabulation, along with some sort of environmental impact dataset.</p>
-<h2 id="steps-to-completing-this-product"><a class="header" href="#steps-to-completing-this-product">Steps to completing this product</a></h2>
-<ol>
-<li>Find the dataset, that targets the specific indicator that we’re looking for</li>
-<li>Clean the dataset</li>
-<li>Train test split, then train the model that we want to use SVR, XGBR, AI approaches</li>
-<li>Verify results on some set of features</li>
-</ol>
-<p>After these steps have been completed, participants will then build on the product, or not if this is all that is completed.</p>
-<h2 id="building-on-the-mvp"><a class="header" href="#building-on-the-mvp">Building on the MVP</a></h2>
-<p>Using the MVP participants can start to explore designs for sustainable living in a parametric architecture workbench (FreeCAD or smth) potentially develop a plugin for this software, or create some sort of real world application that assists designers when developing models.</p>
-<p><strong>*Note:</strong> in Free CAD usually you store parameters in a spreadsheet, these parameters can be fed into the model, tbh I don’t know that much about parametric design. Maybe other parametric software is similar like this.</p>
-<h2 id="alternitive-products--build-paths"><a class="header" href="#alternitive-products--build-paths">Alternitive Products / Build Paths</a></h2>
-<ul>
-<li>If the team wants to explore AI/DL then you can also compare performance between ML approaches and AI/DL approaches.</li>
-</ul>
+                        <h1 id="code-demo"><a class="header" href="#code-demo">Code Demo</a></h1>
+<p>The main reason that we used mdBooks is because of the ability to run code inside of the documentation for demo pourposes.</p>
+<pre><pre class="playground"><code class="language-rust editable">
+fn main() {
+	let x: i32 = 5;
+	for i in 0..x {
+		println!(&quot;Hello!&quot;);
+	}
+}
+</code></pre></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../project_statement/intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../papers/intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
-                            </a>
-                            <a rel="next" href="../papers/intro.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
                     </nav>
@@ -174,11 +163,8 @@ The minimum viable product for this project will be, a solution that simply corr
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../project_statement/intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../papers/intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
-                    </a>
-                    <a rel="next" href="../papers/intro.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
