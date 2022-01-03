@@ -29,7 +29,7 @@ Introduction to tooling, and methods.
 
 Discover new datasets, and work on MVP
 
-**Assign:** Find more data, better data sets, do we have to build our own?
+**Assign:** Find more data, better data sets, do we have to build our own datasets, similation methodolgies?
 
 **Deliverable:** I want to see code completed to a certian extent what do they have so far, each week I want to sort of review what thay're doing.
 
