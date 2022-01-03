@@ -25,15 +25,21 @@ Introduction to tooling, and methods.
 
 **Deliverable:** Go over what they read last week discuss approaches to the problem.
 
+### Week 3:
 
-### Week 3-6:
+Discover new datasets, and work on MVP
 
-**TODO** This needs to be specified
+**Assign:** Find more data, better data sets, do we have to build our own?
 
+**Deliverable:** I want to see code completed to a certian extent what do they have so far, each week I want to sort of review what thay're doing.
 
-### Week 7:
+### Week 4-5:
 
-This week participants need to essentially have the project completed at least the MVP targeted a the begining of the project. (there's actually no way this doesn't happen). Additionally work needs to begin on the poster and presentation this week for the symposium. 
+MVP Should be completed maybe start building on this?
+
+### Week 6-7:
+
+This week participants need to essentially have the project completed at least the MVP targeted a the begining of the project. (there's actually no way this doesn't happen). And potentially build on the MVP. Additionally work needs to begin on the poster and presentation this week for the symposium. 
 
 **Assign:** Poster and Presentation 
 
