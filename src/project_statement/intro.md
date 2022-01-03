@@ -21,7 +21,7 @@ Introduction to tooling, and methods.
 
 **Learn:** Tooling (sklearn, pandas, xgboost) 
 
-**Assign:** Find more datasets, applicable problem (some sort of algorithmic thinking problem, kaggle comp, or lc problem :kekw:) 
+**Assign:** Find more datasets, applicable problem (some sort of algorithmic thinking problem, kaggle comp, or lc problem etc.) 
 
 **Deliverable:** Go over what they read last week discuss approaches to the problem.
 
@@ -35,7 +35,11 @@ Discover new datasets, and work on MVP
 
 ### Week 4-5:
 
-MVP Should be completed maybe start building on this?
+Work on the core of the project
+
+**Assign:** Work on the project lol.
+
+**Deliverable:** Each week need update and code review on where team is at in the process.
 
 ### Week 6-7:
 
